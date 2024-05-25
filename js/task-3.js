@@ -4,17 +4,17 @@
  const inputElem = document.querySelector('#name-input');
  const outputElem = document.querySelector('#name-output');
 
- inputElem.addEventlistener('input', event => {
+ inputElem.addEventlistener('input', (event) => {
     event.preventDefault();
     
-     constValue = inputElem.value.trim();
-     if (value === " ") {
+     const user = inputElem.value.trim();
+     if (user === " ") {
 
          outputElem.textContent = 'Anonymous';
      }
      else {
         
-        outputElem.textContent = constValue;
+        outputElem.textContent = user;
     }
 
  });
