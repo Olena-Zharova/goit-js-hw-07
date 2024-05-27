@@ -4,7 +4,7 @@
  const inputElem = document.querySelector('#name-input');
  const outputElem = document.querySelector('#name-output');
 
- inputElem.addEventlistener('input', (event) => {
+ inputElem.addEventListener('input', (event) => {
     event.preventDefault();
     
      const user = inputElem.value.trim();

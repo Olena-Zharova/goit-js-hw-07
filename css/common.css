@@ -71,17 +71,19 @@ padding: 0;
 
 
 .gallery {
-  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   row-gap: 48px;
-  column-gap: 24px;
   max-width: 1440px;
-}
+    }
+
 
 .img-item {
   width: 360px;
   height: 300px;
+  
+
 }
 
 #name-input{
@@ -175,8 +177,9 @@ button {
   letter-spacing: 0.04em;
   color: #fff;
 }
-
-#controls {
+    .conteiner-controls{
+  display: flex;
+  align-items: center;
   background: #f6f6fe;
   border-radius: 8px;
   padding: 32px;
@@ -186,9 +189,10 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 16px;
+
 }
 
-.input-amount {
+.input-number {
   border: 1px solid #808080;
   border-radius: 8px;
   padding: 8px 72px;
@@ -196,16 +200,10 @@ button {
   height: 40px;
   margin-right: 10px;
 
-  border: 1px solid #808080;
-    border-radius: 8px;
-    padding: 8px 72px;
-    width: 150px;
-    height: 40px;
 }
-
-#boxes {
-  display: flex;
-  gap: 15px;
+  
+.conteiner-boxes {
+  
   border-radius: 8px;
   padding: 32px;
   width: 486px;
@@ -214,9 +212,11 @@ button {
   background: #f6f6fe;
   margin-left: auto;
   margin-right: auto;
+  
 }
+    
 
-.destroy {
+.destroy-btn {
   border: 0;
 border-radius: 8px;
   padding: 8px 16px;
@@ -229,9 +229,10 @@ border-radius: 8px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
+    cursor: pointer;
 }
 
-.create {
+.create-btn {
   border: 0;
   border-radius: 8px;
     padding: 8px 16px;
