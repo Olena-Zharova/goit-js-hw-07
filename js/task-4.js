@@ -21,7 +21,7 @@ formElem.addEventListener('submit', event => {
       };
 
       console.log(formNew);
-      form.reset();
+      formElem.reset();
     
     
 

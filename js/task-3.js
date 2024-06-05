@@ -8,13 +8,15 @@
     event.preventDefault();
     
      const user = inputElem.value.trim();
-     if (user === " ") {
-
-         outputElem.textContent = 'Anonymous';
+     if (user) {
+         
+         outputElem.textContent = user;
+         
      }
      else {
-        
-        outputElem.textContent = user;
+         
+        outputElem.textContent = 'Anonymous';
+       
     }
 
  });
